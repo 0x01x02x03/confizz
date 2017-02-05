@@ -27,7 +27,7 @@ compileas = ["mipsbin", #mips
              "i586bin", #i586
              "m68kbin", #m68k
              "otrobin", #spark
-			 "' '", #armv4l
+			 "armv4lbin", #armv4l
 			 "otrobinmas", #armv5l
 			 "otrootrobin"]#powerpc-440fp
 
