@@ -28,8 +28,8 @@ compileas = ["mipsbin", #mips
              "m68kbin", #m68k
              "otrobin", #spark
 			 "armv4lbin", #armv4l
-			 "otrobinmas", #armv5l
-			 "otrootrobin"]#powerpc-440fp
+			 "armv5lbin", #armv5l
+			 "powerpc-440fpbin"]#powerpc-440fp
 
 getarch = ['http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mips.tar.bz2',
 'http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mipsel.tar.bz2',
